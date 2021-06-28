@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main class="site-main">
+    <h2 class="site-main__heading">Sing up</h2>
+    <p class="site-main__text">Get started!</p>
+
+    <form class="site-main__form">
+      <label class="login-label visually-hidden" for="login">Login</label>
+      <input class="user-login" type="text" required  id="login" name="login" placeholder="Login">
+      
+      <label class="email-label visually-hidden" for="email">Email</label>
+      <input class="user-email" type="email" required  id="email" name="email" placeholder="Email">
+      
+      <label class="password visually-hidden" for="password">Password</label>
+      <input class="user-password" type="password" required  id="password" name="password" placeholder="Password">
+
+      <label class="user-file">
+        <input class="user-file-input" type="file" accept="image/*" required>
+        Photo Upload
+      </label>
+      <span class="file-name">File name</span>
+
+      <div class="remember-me-forgot-password">
+        <div class="remember-me">
+          <input type="checkbox" class="remember-me-el" id="remember-me">
+          <label for="remember-me">Remember me</label>
+        </div>
+      </div>
+
+      <button type="submit" class="register">Sign up</button>
+      
+      <a href="/login" class="sign-link">I am already member</a>
+            
+    </form>
+  </main>
+  
+  <footer class="site-main__footer">
+  </footer>
+
+
+  <script src="js/register.js"></script>
+</body>
+</html>

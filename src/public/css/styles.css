@@ -1,0 +1,241 @@
+/* =============== CONTENTS =============== */
+/* FONTS */
+/* BOX-SIZING */
+/* GLOBAL STYLES */
+/* HELPER / GLOBAL COMPONENTS */
+/* MEDIA QUERIES */
+
+
+
+/*------------------------------------*\
+#FONT-FACE
+\*------------------------------------*/
+
+@font-face {
+  font-family: 'Lexend Deca';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/lexend-deca-v7-latin-regular.woff2') format('woff2'), 
+  url('../fonts/lexend-deca-v7-latin-regular.woff') format('woff'); 
+}
+
+/*------------------------------------*\
+#BOX-SIZING
+\*------------------------------------*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+
+
+/*------------------------------------*\
+#GLOBAL-STYLES
+\*------------------------------------*/
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 1.5;
+  color: #222;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/*------------------------------------*\
+#HELPER / GLOBAL COMPONENTS
+\*------------------------------------*/
+
+:root {
+  --main-color: #E5E5E5;
+  --accent-color: #224957;
+  --font-family: "Lexend Deca", "Arial", sans-serif;
+}
+
+
+/* VISUALLY HIDING CODE */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* CONTAINER */
+
+.container {
+  max-width: 1160;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.site-main {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.site-main__heading {
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 80px;
+  text-align: center;
+  color: #224957;
+  padding: 0;
+  margin: 0;
+}
+
+.site-main__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #224957;
+}
+
+.site-main__form {
+  max-width: 300px;
+  
+}
+
+.user-login,
+.user-email,
+.user-password {
+  min-width: 100%;
+  padding: 12px 13px;
+  border-radius: 10px;
+  margin-bottom: 20px; 
+  border: none;
+  background: var(--accent-color); 
+}
+
+.user-login:hover,
+.user-email:hover,
+.user-password:hover {
+  background-color: #20DF7F;
+}
+
+.user-login::placeholder,
+.user-email::placeholder,
+.user-password::placeholder {
+  font-size: 14px;
+  line-height: 20px;  
+  color: #FFFFFF;
+}
+
+
+input[type="file"] {
+  display: none;
+}
+
+.user-file {
+  border: 1px solid var(--accent-color);
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.remember-me-forgot-password {
+  color: var(--accent-color);
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.forgot-password {
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+.login,
+.register {
+  display: block;
+  width: 100%; 
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background: #20DF7F;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 15px;
+}
+
+.login:hover,
+.register:hover {
+  cursor: pointer;
+  background: var(--accent-color);
+  color: #20DF7F;
+}
+
+.login:active,
+.register:active {
+  cursor: pointer;
+  background: var(--main-color);
+  color: #20DF7F;
+}
+
+.sign-link {
+  display: block;
+  text-decoration: none;
+  color: var(--accent-color);
+  text-align: center;
+}
+
+.sign-link:hover {
+  color: #20DF7F;
+}
+
+
+.site-main__footer {
+  position: absolute;
+  bottom: -50px;
+  order: -1;
+  height: 140px;
+  width: 100%;
+  background-image: url("../img/bg-footer.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0;
+  padding: 0;
+}

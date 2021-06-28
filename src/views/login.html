@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main class="site-main">
+    <h2 class="site-main__heading">Sing in</h2>
+    <p class="site-main__text">Get Started!</p>
+
+    <form class="site-main__form">
+      <label class="login-label visually-hidden" for="login">Login</label>
+      <input class="user-login" type="text" required  id="login" name="login" placeholder="Login">
+      
+      <label class="password visually-hidden" for="password">Password</label>
+      <input class="user-password" type="password" required  id="password" name="password" placeholder="Password">
+
+      <div class="remember-me-forgot-password">
+        <div class="remember-me">
+          <input type="checkbox" class="remember-me-el" id="remember-me">
+          <label for="remember-me">Remember me</label>
+        </div>
+
+        <p class="forgot-password">Forgot password ?</p>
+
+      </div>
+
+
+      <button type="submit" class="login">Log in</button>
+
+      <a href="./register" class="sign-link">Create an account</a>
+      
+    </form>
+  </main>
+  
+  <footer class="site-main__footer"></footer>
+
+
+  <script src="js/request.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>
