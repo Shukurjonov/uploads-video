@@ -17,6 +17,6 @@ for (const name of Object.keys(nets)) {
 
 const host = results["Беспроводная сеть"][0]
 
-const PORT = 5000
+const PORT = process.env.PORT || 5000
 
 module.exports = {host, PORT}
