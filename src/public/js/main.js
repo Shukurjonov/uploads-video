@@ -76,8 +76,6 @@ fileUpload.onsubmit = async (event) => {
 async function messagesRenderer(id, users) {
   let data = await request('/files', 'GET')
   let string = ""
-  let str = ""
-  console.log(data)
   
   data.map(files => {
     
@@ -85,7 +83,6 @@ async function messagesRenderer(id, users) {
     string += `
     <li class="uploads-files__item files">
     <object data=${'files/' + files.file_link} class="files__main" width="280px" height="150px"></object>
-    
     <a href="/downloads?fileName=${files.file_link}" class="files__generatsiya__link">Download</a>
     </li>
     `
